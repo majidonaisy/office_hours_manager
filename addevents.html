@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+    <title>Add Your events</title>
+</head>
+<body>
+    <div class="container">
+    <h2>Add Event</h2>
+<form id="addEventForm" action="addevents.php" method="post">
+    <label for="title">Event Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="start">Start Date and Time:</label>
+    <input type="datetime-local" id="start" name="start" required>
+
+    <label for="end">End Date and Time:</label>
+    <input type="datetime-local" id="end" name="end" required>
+
+    <button type="submit" style = 'background-color: #68a992'>Add Event</button>
+</form>
+</div>
+<a href="professor_dashboard.php"><button style = 'background-color: #68a992'>Go Back To Dashboard</button></a>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Page</title>
+  <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            
+    background: linear-gradient(to bottom right, #aeefff, #b7f1c9);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        button {
+    background-color: #68a992; /* A slightly darker shade of blue */
+    color: #ffffff; /* Text color, can be white or another contrasting color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Add rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #527d73; /* Darker shade when the button is hovered */
+}
+  </style>
+</head>
+<body>
+  
+  <div class="login-container">
+  <h2>Register</h2>
+  <form action="registration.php" method="post">
+    
+    <input type="text" id="id" name="id" required placeholder="ID"><br>
+    
+  
+    <input type="text" id="username" name="username" placeholder="Username"required><br><br>
+    
+   
+    <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+    
+    <button type="submit">Register</button>
+  </form>
+</div>
+</body>
+</html>
